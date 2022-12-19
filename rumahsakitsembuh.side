@@ -1,0 +1,869 @@
+{
+  "id": "bfba210f-ae47-4e4e-aea9-e8ff6387dce5",
+  "version": "2.0",
+  "name": "rumahsakitsembuh",
+  "url": "http://localhost/Hospital-Management-System/",
+  "tests": [{
+    "id": "56d13991-34a0-4329-8ac8-654d91f1ac22",
+    "name": "login",
+    "commands": [{
+      "id": "65e07477-3cc6-4ce5-800a-9a61a1d9742d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Hospital-Management-System/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ac024bb-defd-4cc4-85a6-1cfd982ed516",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x637",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c8e6343-8824-4672-b3a4-f6da97d40e77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//div[@id='nav-placeholder']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cebbac2c-6c9e-45f7-8904-5d36f0aca2b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.nav-item:nth-child(3) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17b39e24-62cd-4f8f-b300-ac4610ce3776",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LogIn as Doctor",
+      "targets": [
+        ["linkText=LogIn as Doctor", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'LogIn as Doctor')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login/login as doctor.html')]", "xpath:href"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LogIn as Doctor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fc41477-3cd4-46b8-8d46-ef2c1a825a9a",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ef2c109-016a-4dc2-aadc-2f358689a9ad",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "df2a579c-6efe-4199-bdb2-c86f03007b18",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81d8e215-de05-408a-9e0a-b7bcdc7b5bf6",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "ae739d8c-b4e7-49ac-89d2-8002dbaa6f05",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6f728b8-2b81-4b1e-ad88-6a12984edff3",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout",
+      "targets": [
+        ["name=logout", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='logout']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "921e072e-9040-428e-b2f0-519629a53ccb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "054e604c-6e2a-4ae5-904a-8ed5f15f894e",
+    "name": "appointment",
+    "commands": [{
+      "id": "04c6e4cd-4b1d-4e2a-89f2-738cc40058f3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Hospital-Management-System/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "498c5ff2-9e90-45c6-8e2f-5498173d8d74",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x637",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bc9ef99-01a1-4652-b59a-b333c3eea52f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//div[@id='nav-placeholder']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e072fbc4-bdf8-4475-8764-dd58aeb48d5c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.nav-item:nth-child(3) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf87b1ae-648d-4768-9f60-8523677871e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LogIn as Patient",
+      "targets": [
+        ["linkText=LogIn as Patient", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'LogIn as Patient')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login/login as patient.html')]", "xpath:href"],
+        ["xpath=//li[3]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'LogIn as Patient')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4672fa6-2eff-445a-bce4-fca4b257aeaf",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bc13db2-be89-4b40-8055-f424ca0c419f",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "cddbef6b-659a-4a8e-a501-09c2ea9dbacb",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fadc82a-8ba5-4cf3-a120-be2b734c6175",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "6f5cdc9d-77b8-42f4-af3a-868820ff7ee4",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96ee2182-67c7-46a5-b049-495a596f00dd",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=h5:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60b196e0-9fbe-4664-89a9-e3d35e40faaf",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=h5:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2022-12-19"
+    }, {
+      "id": "25378649-6bd9-4f98-9aa8-0a544d4a1303",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(7) > input:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(7) > input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='time'])[3]", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25fc1ec0-8eb4-4764-bab4-d2f0952e9b6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(10) > input:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(10) > input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='disease'])[3]", "xpath:attributes"],
+        ["xpath=//p[2]/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a886e81-235f-45e8-b52e-9fe23019d576",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p[2]/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf787fa2-3ed8-47a7-8ea6-4da262294f10",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout",
+      "targets": [
+        ["name=logout", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='logout']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9098562c-3838-4563-a501-d7d0b8eb286a",
+    "name": "feedback",
+    "commands": [{
+      "id": "01283578-8c91-46ff-92c1-c3a181720241",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Hospital-Management-System/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a737881d-d31d-4706-8e4e-49617aa14bf9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x637",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15eff76a-b670-45af-99f6-21b1de161c16",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='contact']/div/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc35cb9-8130-4690-9746-cc6f4713a190",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='contact']/div/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "vian"
+    }, {
+      "id": "b5008183-3afd-42e9-ba35-cc831f7699b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=feedback",
+      "targets": [
+        ["name=feedback", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='feedback']", "xpath:attributes"],
+        ["xpath=//div[@id='contact']/div/div[2]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0bde660-3157-45d4-ac93-e898f77a44ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=feedback",
+      "targets": [
+        ["name=feedback", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='feedback']", "xpath:attributes"],
+        ["xpath=//div[@id='contact']/div/div[2]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "nice"
+    }, {
+      "id": "1f4d49f3-08e4-4fc0-badc-3104b76cb80c",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(7)",
+      "targets": [
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[@id='contact']/div/div[2]/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "924cc10f-4690-4213-b534-2e33dd23eb77",
+    "name": "prescription",
+    "commands": [{
+      "id": "9f95bc44-2ca7-4bec-bcda-b3520a67cd70",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Hospital-Management-System/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1d1cdad-c1d4-4f1f-980d-ed9210382025",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x637",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd3ee736-14ae-4995-9bff-2402ee306764",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//div[@id='nav-placeholder']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a89f2830-c1eb-48d1-942c-a0454e75cc57",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.nav-item:nth-child(3) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a6f6e1d-9723-49b5-9e8e-49f16f89c57b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LogIn as Doctor",
+      "targets": [
+        ["linkText=LogIn as Doctor", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'LogIn as Doctor')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login/login as doctor.html')]", "xpath:href"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LogIn as Doctor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92956fd5-652c-4af8-8ac7-abf88c68a665",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83d2594b-6b28-4bbe-8a6e-30ee8ccc50e8",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "a47febd6-b9cd-4152-aaaf-2a9e0f43efbc",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b872b5d4-c28d-4e2e-b8f3-d8f408b7211e",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "589ebe5a-3bb8-4cb6-a1f4-b40d8a2af6dc",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33d2bef2-a208-4667-8f5d-9f584de936ed",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=p > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3804321e-26bb-4ed7-8b1d-f1d7452bd70c",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=p > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "putra"
+    }, {
+      "id": "a80deddf-62fe-46cb-b3c0-d0e7d795916d",
+      "comment": "",
+      "command": "click",
+      "target": "name=prescription",
+      "targets": [
+        ["name=prescription", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='prescription']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "167b47ec-d672-4843-9b27-3684b96ae52b",
+      "comment": "",
+      "command": "type",
+      "target": "name=prescription",
+      "targets": [
+        ["name=prescription", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='prescription']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\Logo-Polinema-Politeknik-Negeri-Malang-PNG.png"
+    }, {
+      "id": "839597f0-352b-4f0d-8c64-4b55020a7ebc",
+      "comment": "",
+      "command": "click",
+      "target": "name=upload",
+      "targets": [
+        ["name=upload", "name"],
+        ["css=center > input", "css:finder"],
+        ["xpath=//input[@name='upload']", "xpath:attributes"],
+        ["xpath=//center/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c784f4c9-16d5-41d2-8197-7850d34e12cc",
+    "name": "book an appointment",
+    "commands": [{
+      "id": "10e473cf-144e-4cef-85f6-64560c983736",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Hospital-Management-System/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbfe7b97-1d3d-409d-8952-52dca7bf6bd1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x637",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "261f17df-b800-41d6-bb00-9218234ac5fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//div[@id='nav-placeholder']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60c35d76-d829-4642-8e75-284165e82aa3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Book An Appointment",
+      "targets": [
+        ["linkText=Book An Appointment", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Book An Appointment')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'appointment 1.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Book An Appointment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a6c47a7-7d70-4d5e-bde3-a6f5cc3c275a",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5485cc1f-5b4f-4f80-85be-290ec91254d8",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "fa2f2a14-e93f-4e0a-91a7-78e94d313ca2",
+      "comment": "",
+      "command": "click",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "881b1b7a-8eee-4c43-8cd2-623273cfa79d",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "rishi"
+    }, {
+      "id": "4b33ab30-71a0-4be1-981c-3afcf11cc3a0",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56b32aca-8fe3-4e71-89fd-52aaa79b0971",
+      "comment": "",
+      "command": "click",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=h5:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a93e4c46-1865-4de6-9c57-58d8c3f58ca2",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=h5:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2022-12-19"
+    }, {
+      "id": "2c9f00a1-ef51-4551-9790-9ca3a6833c1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(7) > input:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(7) > input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='time'])[2]", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c1b88bc-a8d4-440b-9ccf-2b1c9d72e8bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(10) > input:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(10) > input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='disease'])[2]", "xpath:attributes"],
+        ["xpath=//p[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d1e5b26-ca01-40bc-becf-8d110a622668",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//p[2]/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ad34450-630d-4fd3-b085-3e55ef494db3",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout",
+      "targets": [
+        ["name=logout", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='logout']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4d63dc0c-bcb5-43fc-9e71-ce56215abe41",
+    "name": "contact",
+    "commands": [{
+      "id": "e757f6b8-a942-4003-b11b-2cbd284038f0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Hospital-Management-System/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e4c0f2c-6fb5-4cd9-8127-03bd5d60e0c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x637",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2da7a427-f9a5-4443-b22b-208db9ae7556",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//div[@id='nav-placeholder']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a32b724-2f0e-4c3f-aca6-21631e27c972",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact Us",
+      "targets": [
+        ["linkText=Contact Us", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact Us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.html#contact')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bab0f122-d1a3-4694-a04d-558b871479f4",
+    "name": "doctors here",
+    "commands": [{
+      "id": "b96c6309-5113-4deb-8db2-d900c080248e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Hospital-Management-System/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cac5c4ea-1faa-4f0d-9ae6-6b84ae756ef2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x637",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "249da96d-1799-4fb8-91e2-9c50a1ffeec7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//div[@id='nav-placeholder']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15b92e8a-c1e0-4b1f-ab39-9bac809af868",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Doctors Here!",
+      "targets": [
+        ["linkText=Doctors Here!", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Doctors Here!')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'list of doctors.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Doctors Here!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "15a1f5ef-dc7c-461a-8546-64654a605517",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["56d13991-34a0-4329-8ac8-654d91f1ac22"]
+  }],
+  "urls": ["http://localhost/Hospital-Management-System/"],
+  "plugins": []
+}
